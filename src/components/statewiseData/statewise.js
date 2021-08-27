@@ -16,7 +16,7 @@ function Statewise() {
             <h1>INDIA COVID 19 DASHBOARD</h1>
             <div className="container-fluid mt-5">
                 <div className="main-heading">
-
+                    <h1 className="mb-5">INDIA COVID 19 DASHBOARD</h1>
                 </div>
             </div>
         </>
