@@ -15,11 +15,12 @@ function Statewise() {
     }, [])
     return (
         <>
-            <h1>INDIA COVID 19 DASHBOARD</h1>
+
             <div className="container-fluid mt-5">
                 <div className="main-heading">
-                    <h1 className="justify-content-center">INDIA COVID 19 DASHBOARD</h1>
+                    <h1 className="text-center">INDIA COVID 19 DASHBOARD</h1>
                 </div>
+                <br />
                 <div className="table-responsive">
                     <Table className="table table-hover" striped bordered hover variant="dark">
                         <thead className="thead-dark">
@@ -33,6 +34,15 @@ function Statewise() {
 
                             </tr>
                         </thead>
+                        <tbody>
+                            <th>State</th>
+                            <th>Confirmed</th>
+                            <th>Recovered</th>
+                            <th>Deaths</th>
+                            <th>Active</th>
+                            <th>Updated</th>
+
+                        </tbody>
                     </Table>
                 </div>
 
