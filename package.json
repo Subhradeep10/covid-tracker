@@ -1,6 +1,6 @@
 {
   "name": "covid-tracker",
-  "homepage": " https://subhradeep10.github.io/covid-tracker",
+  "homepage": "https://subhradeep10.github.io/covid-tracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
