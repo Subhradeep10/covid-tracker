@@ -3,7 +3,9 @@ import React from 'react'
 function Statewise() {
 
     const getCovidData = async () => {
-        fetch('https://data.covid19india.org/data.json')
+        const res = await fetch('https://data.covid19india.org/data.json');
+        const actualData = await res.json();
+        console.log(actualData);
     }
 
     useEffect(() => {
