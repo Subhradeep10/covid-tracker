@@ -35,13 +35,14 @@ function Statewise() {
                             </tr>
                         </thead>
                         <tbody>
-                            <th>State</th>
-                            <th>Confirmed</th>
-                            <th>Recovered</th>
-                            <th>Deaths</th>
-                            <th>Active</th>
-                            <th>Updated</th>
-
+                            <tr>
+                                <th>State</th>
+                                <td>Confirmed</td>
+                                <td>Recovered</td>
+                                <td>Deaths</td>
+                                <td>Active</td>
+                                <td>Updated</td>
+                            </tr>
                         </tbody>
                     </Table>
                 </div>
