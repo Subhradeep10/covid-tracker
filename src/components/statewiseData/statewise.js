@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Table from 'react-bootstrap/Table'
 
 function Statewise() {
 
@@ -20,7 +21,7 @@ function Statewise() {
                     <h1 className="mb-5">INDIA COVID 19 DASHBOARD</h1>
                 </div>
                 <div className="table-responsive">
-                    <table className="table table-hover">
+                    <Table className="table table-hover" striped bordered hover variant="dark">
                         <thead className="thead-dark">
                             <tr>
                                 <th>State</th>
@@ -32,7 +33,7 @@ function Statewise() {
 
                             </tr>
                         </thead>
-                    </table>
+                    </Table>
                 </div>
 
             </div>
