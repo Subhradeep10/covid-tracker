@@ -40,17 +40,19 @@ function Statewise() {
                         <tbody>
                             {
                                 data.map((currElem, ind) => {
-
+                                    return (
+                                        <tr>
+                                            <th>State</th>
+                                            <td className="green">Confirmed</td>
+                                            <td className="green">Recovered</td>
+                                            <td className="red">Deaths</td>
+                                            <td className="green">Active</td>
+                                            <td className="green">Updated</td>
+                                        </tr>
+                                    )
                                 })
                             }
-                            <tr>
-                                <th>State</th>
-                                <td className="green">Confirmed</td>
-                                <td className="green">Recovered</td>
-                                <td className="red">Deaths</td>
-                                <td className="green">Active</td>
-                                <td className="green">Updated</td>
-                            </tr>
+
                         </tbody>
                     </Table>
                 </div>
