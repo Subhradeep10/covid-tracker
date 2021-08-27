@@ -1,13 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Table from 'react-bootstrap/Table'
 
 function Statewise() {
 
+    const [data, setData] = useState([])
+
     const getCovidData = async () => {
         const res = await fetch('https://data.covid19india.org/data.json');
         const actualData = await res.json();
         console.log(actualData.statewise);
+        setData(actualData.statewise)
     }
 
     useEffect(() => {
@@ -37,11 +40,11 @@ function Statewise() {
                         <tbody>
                             <tr>
                                 <th>State</th>
-                                <td>Confirmed</td>
-                                <td>Recovered</td>
-                                <td>Deaths</td>
-                                <td>Active</td>
-                                <td>Updated</td>
+                                <td className="green">Confirmed</td>
+                                <td className="green">Recovered</td>
+                                <td className="red">Deaths</td>
+                                <td className="green">Active</td>
+                                <td className="green">Updated</td>
                             </tr>
                         </tbody>
                     </Table>
