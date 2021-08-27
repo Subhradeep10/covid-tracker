@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Statewise() {
 
@@ -22,6 +23,12 @@ function Statewise() {
                     <table className="table table-hover">
                         <thead className="thead-dark">
                             <tr>
+                                <th>State</th>
+                                <th>Confirmed</th>
+                                <th>Recovered</th>
+                                <th>Deaths</th>
+                                <th>Active</th>
+                                <th>Updated</th>
 
                             </tr>
                         </thead>
