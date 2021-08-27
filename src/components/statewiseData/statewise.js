@@ -39,7 +39,7 @@ function Statewise() {
                         </thead>
                         <tbody>
                             {
-                                data.map(() => {
+                                data.map((currElem, ind) => {
 
                                 })
                             }
