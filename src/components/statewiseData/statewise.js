@@ -38,6 +38,11 @@ function Statewise() {
                             </tr>
                         </thead>
                         <tbody>
+                            {
+                                data.map(() => {
+
+                                })
+                            }
                             <tr>
                                 <th>State</th>
                                 <td className="green">Confirmed</td>
