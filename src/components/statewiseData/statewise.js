@@ -9,11 +9,12 @@ function Statewise() {
     }
 
     useEffect(() => {
-        getCovidData()
+        // getCovidData()
     }, [])
     return (
         <>
             <h1>INDIA COVID 19 DASHBOARD</h1>
+            <div className="container-fluid mt-5"></div>
         </>
     )
 }
