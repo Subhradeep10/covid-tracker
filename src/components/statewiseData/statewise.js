@@ -5,7 +5,7 @@ function Statewise() {
     const getCovidData = async () => {
         const res = await fetch('https://data.covid19india.org/data.json');
         const actualData = await res.json();
-        console.log(actualData);
+        console.log(actualData.statewise);
     }
 
     useEffect(() => {
