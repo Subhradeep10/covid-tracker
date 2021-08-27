@@ -43,11 +43,11 @@ function Statewise() {
                                     return (
                                         <tr key={ind}>
                                             <th>{currElem.state}</th>
-                                            <td className="green">Confirmed</td>
-                                            <td className="green">Recovered</td>
-                                            <td className="red">Deaths</td>
-                                            <td className="green">Active</td>
-                                            <td className="green">Updated</td>
+                                            <td className="green">{currElem.confirmed}</td>
+                                            <td className="green">{currElem.recovered}</td>
+                                            <td className="red">{currElem.deaths}</td>
+                                            <td className="green">{currElem.active}</td>
+                                            <td className="green">{currElem.lastupdatedtime}</td>
                                         </tr>
                                     )
                                 })
