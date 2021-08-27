@@ -14,7 +14,7 @@ function Statewise() {
     }
 
     useEffect(() => {
-        // getCovidData()
+        getCovidData()
     }, [])
     return (
         <>
@@ -41,8 +41,8 @@ function Statewise() {
                             {
                                 data.map((currElem, ind) => {
                                     return (
-                                        <tr>
-                                            <th>State</th>
+                                        <tr key={ind}>
+                                            <th>{currElem.state}</th>
                                             <td className="green">Confirmed</td>
                                             <td className="green">Recovered</td>
                                             <td className="red">Deaths</td>
